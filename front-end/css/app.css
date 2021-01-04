@@ -1,0 +1,102 @@
+/*** Site Colors ***
+dark: #494949
+dark-grey: #8f8e8e
+light-grey: #d3d3d3
+
+*/
+
+body {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color:  #494949;
+    padding: 20px;
+    grid-auto-columns: minmax(100px);
+    grid-template-areas:
+    "menu menu menu menu menu" 
+    "hd hd hd hd hd "
+    "main main main main sd"
+    "ft ft ft ft ft ";
+}
+
+.mainMenu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    background-image: linear-gradient(#8f8e8e ,#d3d3d3);
+}
+
+.menulink {
+    margin: 20px 50px 20px 0px;   
+}
+.link {
+    font-size: 70%;
+}
+
+.header {
+    text-align: center;
+    grid-area: hd;
+    padding: 0px 50px 100px 50px;
+    background: linear-gradient(#d3d3d3,white);
+    /*background-image: url("../images/IMG_8149.png");
+    background-size: cover;
+    background-blend-mode: soft-light;*/  
+}
+
+
+.header h1 {
+    font-size: 300%;
+}
+
+
+.content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sidebar {
+    grid-area: sd;
+    font-size: 70%;
+    display: flexbox;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.box {
+    font-size: 80%;
+    margin: 10px;
+    border: 2px solid #8f8e8e;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: lightgray;
+    text-align: right;
+    
+}
+
+.shortDiscription {
+    text-align: center;
+}
+
+.shortDiscription ul {
+    text-align: left;
+}
+
+.boxlink {
+    text-align: right;
+}
+
+
+img {
+    border-radius: 50%;
+}
+
+
+
+
+
