@@ -38,10 +38,7 @@ body {
     text-align: center;
     grid-area: hd;
     padding: 0px 50px 100px 50px;
-    background: linear-gradient(#d3d3d3,white);
-    /*background-image: url("../images/IMG_8149.png");
-    background-size: cover;
-    background-blend-mode: soft-light;*/  
+    background: linear-gradient(#d3d3d3,white); 
 }
 
 
@@ -66,6 +63,12 @@ body {
 
 .footer {
     grid-area: ft;
+    text-align: center;
+    padding: 50px 10px 30px;
+    font-size: 70%;
+    background: linear-gradient(white, #d3d3d3);
+    
+   
 }
 
 .box {
