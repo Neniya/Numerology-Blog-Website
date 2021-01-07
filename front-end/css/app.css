@@ -4,35 +4,9 @@ dark-grey: #8f8e8e
 light-grey: #d3d3d3
 
 */
+@import "general.css";
 
-body {
-    display: grid;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    color:  #494949;
-    padding: 20px;
-    grid-auto-columns: minmax(100px);
-    grid-template-areas:
-    "menu menu menu menu menu" 
-    "hd hd hd hd hd "
-    "main main main main sd"
-    "ft ft ft ft ft ";
-}
 
-.mainMenu {
-    grid-area: menu;
-    display: flex;
-    flex-direction: row;
-    padding-left: 20px;
-    background-image: linear-gradient(#8f8e8e ,#d3d3d3);
-}
-
-.menulink {
-    margin: 20px 50px 20px 0px;   
-}
-.link {
-    font-size: 70%;
-}
 
 .header {
     text-align: center;
@@ -42,23 +16,13 @@ body {
 }
 
 
-.header h1 {
+.headerh1 {
     font-size: 300%;
 }
 
-
 .content {
-    grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.sidebar {
-    grid-area: sd;
-    font-size: 70%;
-    display: flexbox;
-    flex-direction: row;
-    margin: 30px;
 }
 
 .footer {
@@ -66,9 +30,7 @@ body {
     text-align: center;
     padding: 50px 10px 30px;
     font-size: 70%;
-    background: linear-gradient(white, #d3d3d3);
-    
-   
+    background: linear-gradient(white, #d3d3d3); 
 }
 
 .box {
@@ -78,8 +40,9 @@ body {
     padding: 5px;
     border-radius: 5%;
     background-color: lightgray;
-    text-align: right;
-    
+    text-align: right;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.507);
+    transition: 0.3s;
 }
 
 .shortDiscription {
@@ -90,8 +53,12 @@ body {
     text-align: left;
 }
 
-.boxlink {
-    text-align: right;
+.boxButton {
+    background-color: #a28aa7b4;
+    border-color: #ad81b4;
+    border-radius: 30%;
+    width: 100px;
+    height: 30px;
 }
 
 

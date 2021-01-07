@@ -1,0 +1,65 @@
+/*** Site Colors ***
+dark: #494949
+dark-grey: #8f8e8e
+light-grey: #d3d3d3
+
+*/
+
+@media(min-width:901px){
+    body {
+        display: grid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        color:  #494949;
+        padding: 20px;
+        grid-auto-columns: minmax(100px);
+        grid-template-areas:
+        "menu menu menu menu menu" 
+        "hd hd hd hd hd "
+        "main main main main sd"
+        "ft ft ft ft ft ";
+    }
+
+    .mainMenu {
+        grid-area: menu;
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        background-image: linear-gradient(#8f8e8e ,#d3d3d3);
+    }
+
+    .menulink {
+        margin: 20px 50px 20px 0px;   
+    }
+
+    .link {
+        font-size: 70%;
+    }
+
+    .header {
+        text-align: center;
+        grid-area: hd;
+        padding: 0px 50px 100px 50px;
+        background: linear-gradient(#d3d3d3,white); 
+    }
+
+    .content {
+        grid-area: main;
+    }
+
+    .sidebar {
+        display: inline;
+        width: 150px;
+        grid-area: sd;
+        font-size: 60%;
+        margin: 30px;
+    }
+
+    .footer {
+        grid-area: ft;
+        text-align: center;
+        padding: 50px 10px 30px;
+        font-size: 70%;
+        background: linear-gradient(white, #d3d3d3);
+    }
+}
