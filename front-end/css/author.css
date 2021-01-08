@@ -2,7 +2,8 @@
 dark: #494949
 dark-grey: #8f8e8e
 light-grey: #d3d3d3
-
+grey-purple: #a28aa7b4
+purple:  #ad81b4
 */
 @import "general.css";
 @import "blogpost.css";
@@ -12,12 +13,45 @@ light-grey: #d3d3d3
     grid-template-columns: 1fr 1fr;
 }
 
+.img_author {
+    width: 200px;
+    height: 290px;
+    margin-right: 10px;
+}
 
+body {
+    grid-template-areas:
+    "menu" 
+    "hd"
+    "main"
+    "sd"
+    "ft";
+}
 
+@media(max-width:600px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 
+@media(min-width:701px) and (max-width:900px) { 
+    .img_author {
+        width: 270px;
+        height: 400px;
+    }
+}
 
+@media(min-width:901px) and (max-width:1200px) {  
+    .img_author {
+        width: 300px;
+        height: 440px;
+    }
+}
 
-
-
-
-
+@media(min-width:1201px) {
+    .img_author {
+        width: 390px;
+        height: 560px;
+    }
+}

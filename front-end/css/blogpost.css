@@ -2,17 +2,19 @@
 dark: #494949
 dark-grey: #8f8e8e
 light-grey: #d3d3d3
-
+grey-purple: #a28aa7b4
+purple:  #ad81b4
 */
 @import "general.css";
 
 .content {
-    padding: 50px;
+    padding: 5px;
 }
 
-.imgExample{
-    width: 50%;
-    height: 50%;
+.imgExample {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0;
 }
 
 .example{
@@ -20,10 +22,15 @@ light-grey: #d3d3d3
     align-items: center;
 }
 
+@media(min-width:300px){
+    .imgExample{
+        max-width: 350px;
+        max-height: 250px;
+    } 
+}
 
-
-
-
-
-
-
+@media(min-width:600px){
+    .content {
+        padding: 50px;
+    }
+}
